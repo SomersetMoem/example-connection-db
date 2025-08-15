@@ -9,9 +9,17 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <!-- Java -->
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Versions -->
+        <junit.version>5.13.4</junit.version>
+        <postgresql.version>42.7.1</postgresql.version>
+        <commons.dbcp2.version>2.9.0</commons.dbcp2.version>
+        <owner.version>1.0.12</owner.version>
+        <maven.surefire.version>3.5.3</maven.surefire.version>
     </properties>
 
     <dependencyManagement>
@@ -19,7 +27,7 @@
             <dependency>
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
-                <version>5.13.4</version>
+                <version>${junit.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -27,19 +35,31 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
         </dependency>
+
+        <!-- PostgreSQL Driver -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.7.1</version>
+            <version>${postgresql.version}</version>
         </dependency>
+
+        <!-- Apache Commons DBCP2 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-dbcp2</artifactId>
-            <version>2.9.0</version>
+            <version>${commons.dbcp2.version}</version>
+        </dependency>
+
+        <!-- Owner (Config properties for tests) -->
+        <dependency>
+            <groupId>org.aeonbits.owner</groupId>
+            <artifactId>owner</artifactId>
+            <version>${owner.version}</version>
         </dependency>
     </dependencies>
 
@@ -47,7 +67,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.3</version>
+                <version>${maven.surefire.version}</version>
             </plugin>
         </plugins>
     </build>
