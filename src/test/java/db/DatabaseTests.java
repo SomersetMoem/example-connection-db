@@ -42,16 +42,14 @@ public class DatabaseTests {
         String query = "SELECT id, name, email FROM users ORDER BY id";
         List<Map<String, Object>> results = dbHelper.executeSelectQuery(query);
 
-        // Проверяем, что результат не пустой
         Assertions.assertFalse(results.isEmpty(), "Результат запроса не должен быть пустым");
 
-        // Проверяем структуру первой записи
         Map<String, Object> firstUser = results.get(0);
+
         Assertions.assertTrue(firstUser.containsKey("id"), "Запись должна содержать поле 'id'");
         Assertions.assertTrue(firstUser.containsKey("name"), "Запись должна содержать поле 'name'");
         Assertions.assertTrue(firstUser.containsKey("email"), "Запись должна содержать поле 'email'");
 
-        // Выводим результаты для наглядности
         System.out.println("📋 Результаты запроса:");
         for (Map<String, Object> user : results) {
             System.out.println("   ID: " + user.get("id") +
