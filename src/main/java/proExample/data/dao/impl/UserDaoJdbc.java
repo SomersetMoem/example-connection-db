@@ -1,9 +1,9 @@
-package data.dao.impl;
+package proExample.data.dao.impl;
 
-import config.ConfigDb;
-import data.DataBases;
-import data.dao.UserDao;
-import data.entity.user.UserEntity;
+import proExample.config.ConfigDb;
+import proExample.data.DataBases;
+import proExample.data.dao.UserDao;
+import proExample.data.entity.user.UserEntity;
 
 import java.sql.*;
 import java.util.Optional;

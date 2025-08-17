@@ -1,7 +1,7 @@
 package db;
 
 import org.junit.jupiter.api.*;
-import utils.DatabaseHelper;
+import simpleExample.utils.DatabaseHelper;
 
 import java.util.List;
 import java.util.Map;

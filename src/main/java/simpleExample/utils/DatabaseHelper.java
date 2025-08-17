@@ -1,4 +1,4 @@
-package utils;
+package simpleExample.utils;
 
 import java.sql.*;
 import java.util.ArrayList;

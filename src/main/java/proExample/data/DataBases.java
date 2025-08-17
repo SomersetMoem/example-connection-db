@@ -1,6 +1,6 @@
-package data;
+package proExample.data;
 
-import config.ConfigDb;
+import proExample.config.ConfigDb;
 import org.postgresql.ds.PGSimpleDataSource;
 
 import javax.sql.DataSource;

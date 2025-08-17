@@ -1,9 +1,9 @@
-package data.entity.user;
+package proExample.data.entity.user;
 
 
 import lombok.Getter;
 import lombok.Setter;
-import model.UserJson;
+import proExample.model.UserJson;
 
 import java.io.Serializable;
 import java.util.UUID;

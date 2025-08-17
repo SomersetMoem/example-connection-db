@@ -1,4 +1,4 @@
-package config;
+package proExample.config;
 
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.ConfigFactory;

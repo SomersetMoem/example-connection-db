@@ -1,7 +1,7 @@
-package model;
+package proExample.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import data.entity.user.UserEntity;
+import proExample.data.entity.user.UserEntity;
 
 import java.util.UUID;
 
