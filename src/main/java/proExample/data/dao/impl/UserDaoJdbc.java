@@ -12,7 +12,7 @@ import java.util.UUID;
 public class UserDaoJdbc implements UserDao {
     @Override
     public UserEntity create(UserEntity userEntity) {
-        try (Connection connection = DataBases.connection(ConfigDb.INSTANCE.jdbcUrl())) {
+        try (Connection connection = DataBases.connection(ConfigDb.INSTANCE.jdbcUrl(), connection.setAutoCommit(false))) {
             try (PreparedStatement preparedStatement = connection.prepareStatement(
                     "INSERT INTO user (id, username, email) VALUES (?, ?, ?)",
                     Statement.RETURN_GENERATED_KEYS
