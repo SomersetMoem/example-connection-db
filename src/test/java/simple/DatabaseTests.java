@@ -1,4 +1,4 @@
-package db;
+package simple;
 
 import org.junit.jupiter.api.*;
 import simpleExample.utils.DatabaseHelper;
