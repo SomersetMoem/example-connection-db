@@ -1,4 +1,4 @@
-package proExample.extensions;
+package jdbc.pro.extensions;
 
 import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;

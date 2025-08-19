@@ -1,7 +1,7 @@
-package proExample.data.dao.impl;
+package jdbc.pro.data.dao.impl;
 
-import proExample.data.dao.UserDao;
-import proExample.data.entity.user.UserEntity;
+import jdbc.pro.data.dao.UserDao;
+import jdbc.pro.data.entity.user.UserEntity;
 
 import java.sql.*;
 import java.util.Optional;

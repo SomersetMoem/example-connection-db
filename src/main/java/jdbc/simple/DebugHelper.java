@@ -1,4 +1,4 @@
-package simpleExample.utils;
+package jdbc.simple;
 
 import java.sql.*;
 

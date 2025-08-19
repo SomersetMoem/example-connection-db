@@ -1,6 +1,6 @@
-package proExample.extensions;
+package jdbc.pro.extensions;
 
-import proExample.data.DataBases;
+import jdbc.pro.data.DataBases;
 
 public class DataBasesExtension implements SuiteExtension {
     @Override

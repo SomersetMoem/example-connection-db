@@ -1,7 +1,7 @@
-package simple;
+package jdbc.pro.simple;
 
+import jdbc.simple.DatabaseHelper;
 import org.junit.jupiter.api.*;
-import simpleExample.utils.DatabaseHelper;
 
 import java.util.List;
 import java.util.Map;

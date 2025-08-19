@@ -1,4 +1,4 @@
-package proExample.config;
+package jdbc.pro.config;
 
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.ConfigFactory;

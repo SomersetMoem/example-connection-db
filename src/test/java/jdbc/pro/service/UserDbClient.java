@@ -1,11 +1,11 @@
-package pro.service;
+package jdbc.pro.service;
 
-import proExample.config.ConfigDb;
-import proExample.data.dao.impl.UserDaoJdbc;
-import proExample.data.entity.user.UserEntity;
-import proExample.model.UserJson;
+import jdbc.pro.config.ConfigDb;
+import jdbc.pro.data.dao.impl.UserDaoJdbc;
+import jdbc.pro.data.entity.user.UserEntity;
+import jdbc.pro.model.UserJson;
 
-import static proExample.data.DataBases.transaction;
+import static jdbc.pro.data.DataBases.transaction;
 
 public class UserDbClient {
 

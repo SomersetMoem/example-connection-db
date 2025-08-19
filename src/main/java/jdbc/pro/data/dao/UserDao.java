@@ -1,6 +1,6 @@
-package proExample.data.dao;
+package jdbc.pro.data.dao;
 
-import proExample.data.entity.user.UserEntity;
+import jdbc.pro.data.entity.user.UserEntity;
 
 import java.util.Optional;
 import java.util.UUID;

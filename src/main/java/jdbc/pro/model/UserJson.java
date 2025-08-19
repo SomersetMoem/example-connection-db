@@ -1,7 +1,7 @@
-package proExample.model;
+package jdbc.pro.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import proExample.data.entity.user.UserEntity;
+import jdbc.pro.data.entity.user.UserEntity;
 
 import java.util.UUID;
 

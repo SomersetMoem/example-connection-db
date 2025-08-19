@@ -1,11 +1,11 @@
-package pro.test;
+package jdbc.pro.test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import pro.service.UserDbClient;
-import proExample.extensions.DataBasesExtension;
-import proExample.model.UserJson;
+import jdbc.pro.service.UserDbClient;
+import jdbc.pro.extensions.DataBasesExtension;
+import jdbc.pro.model.UserJson;
 
 @ExtendWith(DataBasesExtension.class)
 public class JdbcTest {

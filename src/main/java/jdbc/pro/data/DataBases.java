@@ -1,7 +1,7 @@
-package proExample.data;
+package jdbc.pro.data;
 
 import org.postgresql.ds.PGSimpleDataSource;
-import proExample.config.ConfigDb;
+import jdbc.pro.config.ConfigDb;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
